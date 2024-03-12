@@ -84,7 +84,7 @@ Hack to make Mattermost start up properly locally:
 
 Create a Mattermost team and login.
 
-All bots need to be created via the http://localhost:8065/\<Team-Name\>/integrations/bots
+All bots need to be created via the http://localhost:8065/<Team-Name\>/integrations/bots
 Make sure to add the accessTokens and proper names to the bots.json
 
 If you want to use a bot, you have to add it to the team and then to the channel you want to use it in.
