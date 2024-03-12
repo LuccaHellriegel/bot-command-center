@@ -16,13 +16,13 @@ Available bots:
 - transcriber: transcribe every mp3 that is posted
 - logger: logs every message in the channel to the backend
 
-The bots can be freely used together - this is where the magic happens (and where my hackathon demo failed lol).
+The bots can be freely used together - this is where the magic happens (and where my hackathon demo failed - since fixed).
 
 Because this is totally overengineered for a hackathon, I proudly present the technical features:
 
 - instantiate bots via JSON config
 - Observer pattern to subscribe to new posts (PostManager) or channels (MembershipManager) in the bots
-- at-most-once guarantee via persistent tracking (aka we ensure posts are not processed multiple times - AI calls are expensive after-all)
+- at-most-once guarantee via persistent tracking (aka we ensure posts are not processed multiple times - AI calls are expensive after all)
 - examples for using Mattermost APIs that are not part of the Client library / badly-defined properties like "is this from a user or a bot?" (because that is totally what you wanted to spend time on in a hackathon...)
 
 ## Run
@@ -85,6 +85,7 @@ Hack to make Mattermost start up properly locally:
 Create a Mattermost team and login.
 
 All bots need to be created via the http://localhost:8065/<Team-Name\>/integrations/bots
+
 Make sure to add the accessTokens and proper names to the bots.json
 
 If you want to use a bot, you have to add it to the team and then to the channel you want to use it in.
