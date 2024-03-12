@@ -21,7 +21,7 @@ Because this is totally overengineered for a hackathon, I proudly present the te
 - instantiate bots via JSON config
 - Observer pattern to subscribe to new posts (PostManager) or channels (MembershipManager) in the bots
 - at-most-once guarantee via persistent tracking (aka we ensure posts are not processed multiple times - AI calls are expensive after-all)
-- using Mattermost APIs that are not part of the Client library (because that is totally what you wanted to spend time on in a hackathon...)
+- examples for using Mattermost APIs that are not part of the Client library / badly-defined properties like "is this from a user or a bot?" (because that is totally what you wanted to spend time on in a hackathon...)
 
 ## Run
 
@@ -38,6 +38,8 @@ LogSeq has to be started separately. Make sure to enable and start the API Serve
 ### Backend
 
 Usual NodeJS and docker/compose stuff.
+
+Add a ".env" with OPENAI_API_KEY=... to the main folder or add it otherwise to the env.
 
 To configure the bots, check out bots-example.json. You need to write a bots.json file in the main folder.
 Some more info about the format can be found in config.ts or here:
