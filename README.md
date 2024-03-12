@@ -37,7 +37,7 @@ LogSeq has to be started separately. Make sure to enable and start the API Serve
 
 ### Backend
 
-Usual NodeJS and docker/compose stuff.
+Usual NodeJS and docker/compose stuff is required. Then "npm install"
 
 Add a ".env" with OPENAI_API_KEY=... to the main folder or add it otherwise to the env.
 
