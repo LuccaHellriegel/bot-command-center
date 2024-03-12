@@ -4,6 +4,8 @@ Toolkit to easily build specialized GPT-powered bots for your private Mattermost
 
 Status: hackathon product, so use at your own risk. ;)
 
+![command](command.jpeg)
+
 Available bots:
 
 - chat-bot: you already know this one
