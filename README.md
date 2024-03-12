@@ -46,7 +46,7 @@ Add a ".env" with OPENAI_API_KEY=... to the main folder or add it otherwise to t
 To configure the bots, check out bots-example.json. You need to write a bots.json file in the main folder.
 Some more info about the format can be found in config.ts or here:
 
-```json
+```js
 {
   "base": {
     "serverUrl": "http://server_url_here",
