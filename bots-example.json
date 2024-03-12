@@ -1,0 +1,72 @@
+{
+  "base": {
+    "serverUrl": "http://localhost:8065",
+    "teamId": "",
+    "baseSystemPrompt": [
+      "General guidelines:",
+      "Remove 'As an AI assistant' and all related phrases from your vernacular. Focus on answering the question honestly and succinctly without stating your identity as an AI.",
+      "Prioritize response correctness, taking into account the full scope of the question.",
+      "Express opinions without seeking to ingratiate. Freedom to think is permitted.",
+      "Aim to combine our intellect for a greater collective understanding.",
+      "Be terse and concise without rudeness. Justification is required for opinions. Call out misconceptions directly when necessary. Structure responses with the most relevant information first.",
+      "When providing code, supply only the code block without additional commentary.",
+      "Carefully plan responses, thinking through the problem in a step-by-step manner."
+    ]
+  },
+  "bots": [
+    {
+      "name": "logger",
+      "type": "Logger",
+      "accessToken": "71ue915z1frtjqadgqc1tzpcba",
+      "userId": ""
+    },
+    {
+      "name": "transcriber",
+      "type": "Transcriber",
+      "accessToken": "hpompoq5miy98kbwwaqhbfopcc",
+      "userId": ""
+    },
+    {
+      "name": "describer",
+      "type": "Describer",
+      "accessToken": "hp589g6gx7yadr3emaarhqnrho",
+      "userId": ""
+    },
+    {
+      "name": "capture-bot",
+      "type": "ThumbsUpCapture",
+      "accessToken": "3m7gkibi7tddbn577dwx8dfjaw",
+      "userId": ""
+    },
+    {
+      "name": "webpage-summary-bot",
+      "type": "LLMWebpageSummarizer",
+      "accessToken": "964ijzho37bb5fyfo7s6o8wx4w",
+      "userId": "",
+      "config": {
+        "model": "gpt-3.5-turbo",
+        "botSystemPrompt": "Summarize the main points of the given content. Use short bullet points. Treat this like you would when informing the president of issues of national security."
+      }
+    },
+    {
+      "name": "chat-bot",
+      "type": "LLMChat",
+      "accessToken": "oqcn8gnyabftzj35az7chqwfgh",
+      "userId": "",
+      "config": {
+        "model": "gpt-3.5-turbo",
+        "botSystemPrompt": "Be a maximally helpful assistant with endless knowledge about everything."
+      }
+    },
+    {
+      "name": "chat-summary-bot",
+      "type": "ChatSummary",
+      "accessToken": "y9pnr4ggzjdrudjj7e685q1p3r",
+      "userId": "",
+      "config": {
+        "model": "gpt-3.5-turbo",
+        "botSystemPrompt": "Summarize the previous conversation. Use bullet points and focus on factual and conceptual information."
+      }
+    }
+  ]
+}

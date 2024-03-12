@@ -1,0 +1,12 @@
+.vscode
+volumes
+data
+certs
+.env
+logseq-test
+node_modules
+dist
+.env
+postOffsets.json
+bots.json
+*state_file.json
